@@ -1,0 +1,96 @@
+.h {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #0C0C0C;  
+}
+
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    max-width: 980px;
+    width: 100%;
+    margin: 400px auto;
+    height: 150px;
+}
+
+.container p{
+    color: #777777;
+}
+
+.leftText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.leftText h1::first-letter {
+    color: rgba(102, 16, 242, 1);
+}
+
+.leftText h1{
+    width: 100%;
+    animation: digitando 3s steps(23), blink .4s infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid ;
+    color: #fff;
+}
+
+
+.titleText {
+    display: flex;
+    
+}
+
+.rightImg{
+    width: 550px;
+}
+
+.rightImg img{
+    width: 100%;
+
+
+}
+
+
+@keyframes digitando {
+    from{
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    40%{
+        border-color: #c7b7b7;
+    }
+}
+
+.h-links {
+    margin-top: 15px;
+    width: 100%;
+    height: 30px;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.h-links a {
+    width: 80px;
+    border-radius: 5px;
+    background-color:  rgba(102, 16, 242, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.h-links img {
+    width: 30px;
+    height: 100%;
+}

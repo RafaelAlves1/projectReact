@@ -1,0 +1,110 @@
+.header{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 9999;
+    background-color: rgba(51, 51, 51, .15);
+    box-shadow: 3px 2px 5px rgba(17, 17, 17,  .5);
+    backdrop-filter: blur(8px);
+    
+    width: 100%;
+    height: 60px;
+}
+
+.headerContainer{
+    max-width: 980px;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+.message {
+    
+    width: 70px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    animation: digitando 3s steps(23), blink .4s infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid ;
+    color: rgba(102, 16, 242, 1);
+    
+}
+
+@keyframes digitando {
+    from{
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    40%{
+        border-color: #c7b7b7;
+    }
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 15px;
+    padding: 10px;
+    border-radius: 5px;
+
+    color: #c7b7b7;
+}
+
+.menu a:last-child{
+    background-color: rgba(102, 16, 242, 1);
+    color: #fff;
+}
+
+.menuMobile{
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #DDDD;
+    z-index: 999;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    
+}
+
+.menuMobile img{
+    width: 25px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .menu,
+    .logo {
+        display: none;
+    }
+
+    .menuMobile{
+        display: flex;
+    }
+
+    .header{
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    
+}
