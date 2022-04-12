@@ -1,6 +1,6 @@
 import './header.css';
 
-import Sobre from '../../img/About.svg';
+import Sobre from '../../img/Male User.svg';
 import Contato from '../../img/Contact.svg';
 import Inicio from '../../img/Home.svg';
 import Projetos from '../../img/Project Management.svg';

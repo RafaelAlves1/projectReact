@@ -1,7 +1,7 @@
 import './projectItems.css'
 
 
-export default function ProjectItems({img, link, nome,}){
+export default function ProjectItems({img, link, nome, tech1, tech2, tech3 }){
     return(
        
             <>
@@ -17,6 +17,12 @@ export default function ProjectItems({img, link, nome,}){
                     <a href={link} target="_blank" rel="noreferrer"  >
                         Visualizar Projeto
                     </a>
+                </div>
+
+                <div className="techs">
+                    <span> {tech1} </span>
+                    <span> {tech2} </span>
+                    <span> {tech3} </span> 
                 </div>
 
                 
